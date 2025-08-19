@@ -15,7 +15,10 @@ app.use(express.urlencoded({extended: true}));
 
 // routes
 const routes = require("./routes/userRoutes.js");
+const questionRoutes = require("./routes/questionRoute.js");
 app.use("/api/user", routes);
+app.use("/api/questions", questionRoutes)
+
 
 
 // dashboard

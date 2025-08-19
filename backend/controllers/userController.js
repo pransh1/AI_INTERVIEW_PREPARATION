@@ -1,4 +1,6 @@
 const userService = require("../services/userService.js");
+const {PrismaClient } = require("@prisma/client");
+const prisma = new PrismaClient();
 
 const signupController = async(req, res) => {
   try {
@@ -20,12 +22,22 @@ const loginController = async(req, res) => {
   }
 }
 
-const profileController = async(req, res) => {
+const profileController = async (req, res) => {
   try {
-    return res.json({message: "Welcome!!", user: req.user});
+    const user = await prisma.user.findUnique({
+      where: { id: Number(req.user.userId) },
+      select: { id: true, name: true, email: true } 
+    });
+
+    if (!user) {
+      return res.status(404).json({ error: "User not found" });
+    }
+
+    return res.json({ message: "Welcome!!", user });
   } catch (error) {
-    res.status(500).json({ error: "Something went wrong" });
-  }
-}
+    console.error(error);
+    res.status(500).json({ error: "Something went wrong" });
+  }
+};
 
 module.exports = { signupController, loginController , profileController };

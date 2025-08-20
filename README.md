@@ -1,5 +1,14 @@
 AI_INTERVIEW PREPARATION
-# AI Interview Question Generator This project is a simple Node.js + Express server that uses OpenAI API to generate interview questions. You can give inputs like **topic, difficulty, and mode**, and the server will return AI-generated questions. --- ## 🚀 Features - Generate interview questions using AI - Supports topic, difficulty, and mode - JSON response format (easy to use with frontend) - Simple REST API (can be tested with Postman or Thunder Client) --- 
+# AI Interview Question Generator
+This project is a simple Node.js + Express server that uses OpenAI API to generate interview questions. You can give inputs like **topic, difficulty, and mode**, and the server will return AI-generated questions. 
+
+--- ## 
+🚀 Features 
+- Generate interview questions using AI 
+- Supports topic, difficulty, and mode
+- JSON response format (easy to use with frontend)
+- Simple REST API (can be tested with Postman or Thunder Client)
+--- 
 
 
 ## ⚙️ Setup & Run 

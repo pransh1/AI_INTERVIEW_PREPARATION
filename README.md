@@ -2,8 +2,7 @@ AI_INTERVIEW PREPARATION
 # AI Interview Question Generator
 This project is a simple Node.js + Express server that uses OpenAI API to generate interview questions. You can give inputs like **topic, difficulty, and mode**, and the server will return AI-generated questions. 
 
---- ## 
-🚀 Features 
+--- ## 🚀 Features 
 - Generate interview questions using AI 
 - Supports topic, difficulty, and mode
 - JSON response format (easy to use with frontend)
@@ -15,8 +14,8 @@ This project is a simple Node.js + Express server that uses OpenAI API to genera
 
 ### 1. Clone the project
 ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone git@github.com:pransh1/AI_INTERVIEW_PREPARATION.git
+    cd AI_INTERVIEW_PREPARATION
 ```
 
 ### 2. Install the dependencies

@@ -24,9 +24,9 @@ npm start
 ```
   
 ### 5. Some Screenshots 
-![App Screenshot](./backend/screenshorts/users.png) 
+![App Screenshot](./backend/screenshots/users.png) 
 
 
-![App Screenshot](./backend/screenshorts/questions.png) 
+![App Screenshot](./backend/screenshots/questions.png) 
 
 ## THANK YOU FOR READING!
